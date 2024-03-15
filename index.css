@@ -1,5 +1,14 @@
 body {
-    background-color: #552828;
+    background-image: url(./images/design-background-subtle-dark-modern_899263-9216.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#navbar {
+    border: 2px solid #ccc; /* Add a regular border */
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000;
 }
 
 @font-face {
@@ -42,38 +51,10 @@ body {
 
 /* On hover, the text has a glow effect */
 .topnav a:hover {
-    background-color: #2A1B1B;
+    background-color: #191919;
     color: white;
     animation: glow 1s ease-in-out infinite alternate;
 }
-
-
-/* Lines 40-62 give it an underline animation when the user hovers over the a tags on the navbar */
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: white;
-}
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
 
 /* Give text a glow effect */
 .glow {
