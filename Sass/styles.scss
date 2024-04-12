@@ -7,27 +7,23 @@ $background-color-2: #191919;
 $background-color-3: white;
 
 // Define variable for font family
-$font-family-1: neon;
+$font-family-1: mainFont;
 
 // Import font
 @font-face {
-    font-family: neon;
-    src: url(../sportrop/Sportrop.ttf);
+    font-family: mainFont;
+    src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
 }
 
 // Body styles
 body {
-    background-image: url(../images/design-background-subtle-dark-modern_899263-9216.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: grey;
     color: $color-1;
 }
 
 // Navbar styles
 #navbar {
     border: 2px solid #ccc;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000;
 }
 
 // Sticky navbar styles
@@ -59,48 +55,19 @@ body {
         &:hover {
         background-color: $background-color-2;
         color: $color-1;
-        animation: glow 1s ease-in-out infinite alternate;
         }
     }
 }
 
-// Footer styles
+//Footer styles
 .footer {
     position: fixed;
+    width: 99%;
     bottom: 0;
-    left: 0; // Added left: 0 to position the footer at the left edge
-    width: calc(100% - 40px); // Adjusted width to account for left and right margins
     color: white;
     text-align: center;
     background-color: $background-color-1;
     border-radius: 25px;
     border: 2px solid #ccc;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000;
-    margin: 20px; // Keeping the margin for top and bottom
     font-family: $font-family-1;
-}
-
-// Glow effect
-.glow {
-    font-size: 80px;
-    color: $color-3;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-// Glow animation
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000, 0 0 50px #D40000, 0 0 60px #D40000, 0 0 70px #D40000;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #AA1717, 0 0 40px #AA1717, 0 0 50px #AA1717, 0 0 60px #AA1717, 0 0 70px #AA1717, 0 0 80px #AA1717;
-    }
-}
-
-// Media query for small screens
-@media screen and (max-width: 725px) {
-    .topnav a {
-        font-size: 20px;
-    }
 }

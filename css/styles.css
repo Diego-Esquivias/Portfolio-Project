@@ -1,18 +1,14 @@
 @font-face {
-  font-family: neon;
-  src: url(../sportrop/Sportrop.ttf);
+  font-family: mainFont;
+  src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
 }
 body {
-  background-image: url(../images/design-background-subtle-dark-modern_899263-9216.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: grey;
   color: white;
 }
 
 #navbar {
   border: 2px solid #ccc;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000;
 }
 
 .sticky {
@@ -36,46 +32,21 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
-  font-family: neon;
+  font-family: mainFont;
 }
 .topnav a:hover {
   background-color: #191919;
   color: white;
-  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .footer {
   position: fixed;
+  width: 99%;
   bottom: 0;
-  left: 0;
-  width: calc(100% - 40px);
   color: white;
   text-align: center;
   background-color: black;
   border-radius: 25px;
   border: 2px solid #ccc;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000;
-  margin: 20px;
-  font-family: neon;
-}
-
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D40000, 0 0 40px #D40000, 0 0 50px #D40000, 0 0 60px #D40000, 0 0 70px #D40000;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #AA1717, 0 0 40px #AA1717, 0 0 50px #AA1717, 0 0 60px #AA1717, 0 0 70px #AA1717, 0 0 80px #AA1717;
-  }
-}
-@media screen and (max-width: 725px) {
-  .topnav a {
-    font-size: 20px;
-  }
+  font-family: mainFont;
 }/*# sourceMappingURL=styles.css.map */
