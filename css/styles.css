@@ -3,39 +3,28 @@
   src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
 }
 body {
-  background-color: grey;
+  background-image: url(../images/abstract-envelope.svg);
+  background-size: cover;
   color: white;
 }
 
 #navbar {
   border: 2px solid #ccc;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #2d3b39;
   border-radius: 25px;
 }
-.topnav a {
+#navbar a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
   font-family: mainFont;
 }
-.topnav a:hover {
-  background-color: #191919;
+#navbar a:hover {
+  background-color: #232e2c;
   color: white;
 }
 
@@ -45,7 +34,7 @@ body {
   bottom: 0;
   color: white;
   text-align: center;
-  background-color: black;
+  background-color: #2d3b39;
   border-radius: 25px;
   border: 2px solid #ccc;
   font-family: mainFont;

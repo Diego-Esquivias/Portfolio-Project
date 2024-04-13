@@ -1,10 +1,9 @@
 // Define variables for colors
 $color-1: white;
-$color-2: #f2f2f2;
-$color-3: #fff;
-$background-color-1: black;
-$background-color-2: #191919;
-$background-color-3: white;
+$color-2: black;
+$background-color: #647374;
+$navBar-color: #2d3b39;
+$footer-color: #2d3b39;
 
 // Define variable for font family
 $font-family-1: mainFont;
@@ -17,35 +16,21 @@ $font-family-1: mainFont;
 
 // Body styles
 body {
-    background-color: grey;
+    background-image: url(../images/abstract-envelope.svg);
+    background-size: cover;
     color: $color-1;
 }
 
 // Navbar styles
 #navbar {
     border: 2px solid #ccc;
-}
-
-// Sticky navbar styles
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    + .content {
-        padding-top: 60px;
-    }
-}
-
-// Topnav styles
-.topnav {
     overflow: hidden;
-    background-color: $background-color-1;
+    background-color: $navBar-color;
     border-radius: 25px;
 
     a {
         float: left;
-        color: $color-2;
+        color: $color-1;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -53,7 +38,7 @@ body {
         font-family: $font-family-1;
 
         &:hover {
-        background-color: $background-color-2;
+        background-color: #232e2c;
         color: $color-1;
         }
     }
@@ -66,7 +51,7 @@ body {
     bottom: 0;
     color: white;
     text-align: center;
-    background-color: $background-color-1;
+    background-color: $footer-color;
     border-radius: 25px;
     border: 2px solid #ccc;
     font-family: $font-family-1;
