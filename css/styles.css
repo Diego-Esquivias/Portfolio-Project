@@ -6,16 +6,25 @@ body {
   background-image: url(../images/abstract-envelope.svg);
   background-size: cover;
   color: white;
+  font-family: mainFont;
+  text-align: center;
+}
+
+.homeContent h1 {
+  font-size: 70px;
 }
 
 #navbar {
   border: 2px solid #ccc;
   overflow: hidden;
   background-color: #2d3b39;
-  border-radius: 25px;
+}
+#navbar img {
+  height: 50px;
+  width: 50px;
+  float: left;
 }
 #navbar a {
-  float: left;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -29,13 +38,11 @@ body {
 }
 
 .footer {
-  position: fixed;
   width: 99%;
   bottom: 0;
   color: white;
   text-align: center;
   background-color: #2d3b39;
-  border-radius: 25px;
   border: 2px solid #ccc;
   font-family: mainFont;
 }
@@ -46,14 +53,19 @@ body {
   gap: 20px;
   margin: auto;
   grid-template-columns: auto auto;
-  justify-content: space-evenly;
   background-color: crimson;
-  width: 80%;
+  width: 75%;
   height: 500px;
 }
 .container .image-container {
+  margin: auto;
   width: 150px;
   height: 150px;
   text-align: center;
   background-color: blue;
+}
+
+#homeLogo {
+  margin: auto;
+  width: fit-content;
 }/*# sourceMappingURL=styles.css.map */
