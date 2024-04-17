@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 
-.homeContent h1 {
+.homeContent #title {
   font-size: 70px;
 }
 
@@ -63,6 +63,28 @@ body {
   height: 150px;
   text-align: center;
   background-color: blue;
+}
+
+.resumeGrid {
+  height: 700px;
+  width: 70%;
+  margin: auto;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  background-color: orange;
+}
+.resumeGrid .resumeItem {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  background-color: blue;
+}
+.resumeGrid #item-1 {
+  grid-column: span 3;
+}
+.resumeGrid #item-2 {
+  grid-column: span 2;
 }
 
 #homeLogo {

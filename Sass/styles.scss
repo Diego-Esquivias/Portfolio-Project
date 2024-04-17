@@ -24,7 +24,7 @@ body {
 }
 
 .homeContent {
-    h1 {
+    #title {
         font-size: 70px;
     }
 }
@@ -88,6 +88,33 @@ body {
         background-color: blue;
     }
 }
+
+.resumeGrid {
+    height: 700px;
+    width: 70%;
+    margin: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: orange;
+
+    .resumeItem {
+        height: 90%;
+        width: 80%;
+        margin: auto;
+        background-color: blue;
+    }
+
+    #item-1 {
+        grid-column: span 3;
+    }
+
+    #item-2 {
+        grid-column: span 2;
+    }
+}
+
+
 
 // Logo on Home page
 #homeLogo {

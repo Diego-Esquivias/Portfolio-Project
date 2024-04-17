@@ -1,3 +1,8 @@
 $(function () {
-    $('#homeBody').fadeIn(2000)
+    // $('.homeContent').hover(function {
+    //     for (let i = 5000; i == 1000; i -= 1000) {
+    //         $('.homeContent').slideDown(i)
+    //         $('.homeContent').slideUp(i)
+    //     }
+    // })
 })
