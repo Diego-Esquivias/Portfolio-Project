@@ -21,6 +21,24 @@ body {
     color: $color-1;
     font-family: mainFont;
     text-align: center;
+
+    #name {
+        width: 15%;
+        height: 40px;
+        background-color: aqua;
+        margin: auto;
+        line-height: 40px;
+        display: none;
+    }
+
+    #hobby {
+        width: 45%;
+        height: 55px;
+        margin: auto;
+        background-color: aqua;
+        line-height: 55px;
+        display: none;
+    }
 }
 
 .homeContent {
@@ -31,7 +49,7 @@ body {
 
 // Navbar styles
 #navbar {
-
+    
     height: 80px;
     border: 2px solid #ccc;
     overflow: hidden;
@@ -42,8 +60,11 @@ body {
         width: 50px;
         float: left;
     }
-
+    
     a {
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
         margin: 20px;
         translate: 10px down;
         color: $color-1;
@@ -108,6 +129,7 @@ body {
         width: 80%;
         margin: auto;
         background-color: none;
+        display: none;
     }
 
     #item-1 {
