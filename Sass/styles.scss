@@ -31,6 +31,8 @@ body {
 
 // Navbar styles
 #navbar {
+
+    height: 80px;
     border: 2px solid #ccc;
     overflow: hidden;
     background-color: $navBar-color;
@@ -42,16 +44,16 @@ body {
     }
 
     a {
+        margin: 20px;
+        translate: 10px down;
         color: $color-1;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 30px;
         font-family: $font-family-1;
 
         &:hover {
-        background-color: #232e2c;
-        color: $color-1;
+        text-decoration: underline;
         }
     }
 }
@@ -59,6 +61,7 @@ body {
 //Footer styles
 .footer {
     // position: fixed;
+    margin-top: 20px;
     width: 99%;
     bottom: 0;
     color: white;
@@ -90,31 +93,76 @@ body {
 }
 
 .resumeGrid {
-    height: 700px;
-    width: 70%;
+    text-align: left;
+    height: 100px;
+    width: 60%;
     margin: auto;
-    background-color: aqua;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    background-color: orange;
-
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: #202525;
+    
     .resumeItem {
         height: 90%;
         width: 80%;
         margin: auto;
-        background-color: blue;
+        background-color: none;
     }
 
     #item-1 {
         grid-column: span 3;
+        grid-row: 1;
     }
 
     #item-2 {
-        grid-column: span 2;
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+    }
+
+    #item-3 {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+    }
+
+    #item-4 {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 2;
+    }
+
+    #item-5 {
+        grid-column: 4 / span 2;
+        grid-row: 1;
+    }
+
+    #item-6 {
+        grid-column: 4 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    #item-7 {
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 2;
+    }
+
+    #item-8 {
+        grid-column: 4 / span 2;
+        grid-row: 5 / span 1;
     }
 }
 
-
+#download {
+    width: 25%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 15px;
+    background-color: #3f504d;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
 
 // Logo on Home page
 #homeLogo {
