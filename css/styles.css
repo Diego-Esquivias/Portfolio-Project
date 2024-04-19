@@ -142,11 +142,21 @@ body #name, body #hobby {
   grid-template-rows: 20% 20% 20% 20% 20%;
   background-color: #202525;
 }
+@media (max-width: 768px) {
+  .resumeGrid {
+    width: 70%;
+  }
+}
 .resumeGrid .resumeItem {
   height: 90%;
   width: 80%;
   margin: auto;
   background-color: none;
+}
+@media (max-width: 768px) {
+  .resumeGrid .resumeItem h3, .resumeGrid .resumeItem h4, .resumeGrid .resumeItem h5, .resumeGrid .resumeItem h6, .resumeGrid .resumeItem p, .resumeGrid .resumeItem li {
+    font-size: smaller;
+  }
 }
 .resumeGrid #item-1 {
   grid-column: span 3;

@@ -168,12 +168,20 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     background-color: #202525;
+    @media (max-width: 768px) {
+        width: 70%;
+    }
     
     .resumeItem {
         height: 90%;
         width: 80%;
         margin: auto;
         background-color: none;
+        @media (max-width: 768px) {
+            h3, h4, h5, h6, p , li{
+                font-size: smaller;
+            }
+        }
     }
 
     #item-1 {
