@@ -1,4 +1,4 @@
-.nameContainer, .hobbyContainer {
+.nameContainer, .hobbyContainer, .logoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   margin-left: auto;
 }
 
-#nameTitle, #hobbyTitle {
+#nameTitle, #hobbyTitle, #logoTitle {
   cursor: pointer;
 }
 
@@ -35,16 +35,16 @@
   transform: translateX(-100%);
 }
 
-.nameContainer:hover #light1, .hobbyContainer:hover #light1 {
+.nameContainer:hover #light1, .hobbyContainer:hover #light1, .logoContainer:hover #light1 {
   transform: translateX(20%);
 }
 
-.nameContainer:hover #dark1, .hobbyContainer:hover #dark1 {
+.nameContainer:hover #dark1, .hobbyContainer:hover #dark1, .logoContainer:hover #dark1 {
   transform: translateX(40%);
   opacity: 0;
 }
 
-.nameContainer:hover #dark2, .hobbyContainer:hover #dark2 {
+.nameContainer:hover #dark2, .hobbyContainer:hover #dark2, .logoContainer:hover #dark2 {
   transform: translateX(0%);
 }
 
@@ -59,9 +59,9 @@ body {
   font-family: mainFont;
   text-align: center;
 }
-body #name, body #hobby {
+body #name, body #hobby, body #logo {
   width: 50%;
-  height: 50px;
+  height: auto;
   background-color: #384141;
   margin: auto;
   line-height: 50px;

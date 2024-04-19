@@ -23,6 +23,9 @@ $(function () {
         $('#hobby').slideToggle(1000)
     })
 
+    $('#logoTitle').click(function () {
+        $('#logo').slideToggle(1000)
+    })
 })
 let slideIndex = 1;
 showSlides(slideIndex);
