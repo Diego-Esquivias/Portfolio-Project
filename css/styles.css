@@ -1,3 +1,53 @@
+.nameContainer, .hobbyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202525;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#nameTitle, #hobbyTitle {
+  cursor: pointer;
+}
+
+#left {
+  rotate: 180deg;
+}
+
+#darkGroup {
+  fill: #536455;
+}
+
+#lightGroup {
+  fill: #93AEAF;
+}
+
+#dark1, #dark2, #light1 {
+  transition: all 1s ease;
+}
+
+#dark2 {
+  transform: translateX(-100%);
+}
+
+.nameContainer:hover #light1, .hobbyContainer:hover #light1 {
+  transform: translateX(20%);
+}
+
+.nameContainer:hover #dark1, .hobbyContainer:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+
+.nameContainer:hover #dark2, .hobbyContainer:hover #dark2 {
+  transform: translateX(0%);
+}
+
 @font-face {
   font-family: mainFont;
   src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
@@ -9,21 +59,14 @@ body {
   font-family: mainFont;
   text-align: center;
 }
-body #name {
-  width: 15%;
-  height: 40px;
-  background-color: aqua;
+body #name, body #hobby {
+  width: 50%;
+  height: 50px;
+  background-color: #384141;
   margin: auto;
-  line-height: 40px;
+  line-height: 50px;
   display: none;
-}
-body #hobby {
-  width: 45%;
-  height: 55px;
-  margin: auto;
-  background-color: aqua;
-  line-height: 55px;
-  display: none;
+  border-radius: 10px;
 }
 
 .homeContent #title {

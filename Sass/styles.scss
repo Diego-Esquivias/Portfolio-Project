@@ -4,9 +4,61 @@ $color-2: black;
 $background-color: #647374;
 $navBar-color: #2d3b39;
 $footer-color: #2d3b39;
+$dark-color: #536455;
+$light-color: #93AEAF;
 
 // Define variable for font family
 $font-family-1: mainFont;
+
+.nameContainer, .hobbyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202525;
+    border-radius: 10px;
+    width: 50%;
+    margin: {
+        top: 10px;
+        bottom: 10px;
+        right: auto;
+        left: auto;
+    }
+}
+
+#nameTitle, #hobbyTitle {
+    cursor: pointer;
+}
+
+#left {
+    rotate: 180deg;
+}
+#darkGroup {
+    fill: $dark-color;
+}
+#lightGroup {
+    fill: $light-color;
+}
+
+#dark1, #dark2, #light1 {
+    transition: all 1s ease;
+}
+
+#dark2 {
+    transform: translateX(-100%);
+}
+
+.nameContainer:hover #light1, .hobbyContainer:hover #light1 {
+    transform: translateX(20%);
+}
+
+.nameContainer:hover #dark1, .hobbyContainer:hover #dark1{
+    transform: translateX(40%);
+    opacity: 0;
+}
+
+.nameContainer:hover #dark2, .hobbyContainer:hover #dark2{
+    transform: translateX(0%)
+}
 
 // Import font
 @font-face {
@@ -22,23 +74,16 @@ body {
     font-family: mainFont;
     text-align: center;
 
-    #name {
-        width: 15%;
-        height: 40px;
-        background-color: aqua;
+    #name, #hobby {
+        width: 50%;
+        height: 50px;
+        background-color: #384141;
         margin: auto;
-        line-height: 40px;
+        line-height: 50px;
         display: none;
+        border-radius: 10px;
     }
 
-    #hobby {
-        width: 45%;
-        height: 55px;
-        margin: auto;
-        background-color: aqua;
-        line-height: 55px;
-        display: none;
-    }
 }
 
 .homeContent {

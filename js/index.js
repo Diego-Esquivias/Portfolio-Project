@@ -15,11 +15,11 @@ $(function () {
     //     $('#item-1, #item-2, #item-3, #item-4, #item-5, #item-6, #item-7, #item-8').slideDown(2500)
     // }
 
-    $('#nameTitle').hover(function () {
+    $('#nameTitle').click(function () {
         $('#name').slideToggle(1000)
     })
     
-    $('#hobbyTitle').hover(function () {
+    $('#hobbyTitle').click(function () {
         $('#hobby').slideToggle(1000)
     })
 
