@@ -26,6 +26,10 @@ $(function () {
     $('#logoTitle').click(function () {
         $('#logo').slideToggle(1000)
     })
+
+    $('#colorTitle').click(function () {
+        $('#color').slideToggle(1000)
+    })
 })
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -52,4 +56,9 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+}
+
+function colorChange() {
+    var colors = [red, orange, yellow, blue, green]
+    document.getElementById('#light1').style.fill = colors(Math.floor(Math.random(colors.length)))
 }
