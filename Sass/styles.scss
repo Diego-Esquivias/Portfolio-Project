@@ -68,7 +68,9 @@ $font-family-1: mainFont;
 
 // Body styles
 body {
-    background-image: url(../images/abstract-envelope.svg);
+    margin: 0;
+    padding: 0;
+    background: url('../images/Animated\ Shape.svg') no-repeat center center fixed;
     background-size: cover;
     color: $color-1;
     font-family: mainFont;
@@ -112,7 +114,8 @@ body {
         height: 80px;
         border: 2px solid #ccc;
         overflow: hidden;
-        background-color: $navBar-color;
+        background: url('../images/Wave.svg') no-repeat center center fixed;
+        background-size: cover;
         border-radius: 10px;
     
         img {
@@ -141,13 +144,15 @@ body {
 
     //Footer styles
     .footer {
-        position: relative;
+        display: flex;
+        flex-direction: column;
         margin-top: 20px;
         width: 99%;
         bottom: 0;
         color: $color-1;
         text-align: center;
-        background-color: $footer-color;
+        background: url('../images/Wave.svg') no-repeat center center fixed;
+        background-size: cover;
         border: 2px solid #ccc;
         font-family: $font-family-1;
         border-radius: 10px;
@@ -183,7 +188,8 @@ body {
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 20% 20% 20% 20% 20%;
-        background-color: #202525;
+        background: url('../images/Contour\ Line.svg') no-repeat center center fixed;
+        background-size: cover;
         @media (max-width: 768px) {
             width: 70%;
         }

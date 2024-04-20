@@ -53,7 +53,9 @@
   src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
 }
 body {
-  background-image: url(../images/abstract-envelope.svg);
+  margin: 0;
+  padding: 0;
+  background: url("../images/Animated Shape.svg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   font-family: mainFont;
@@ -90,7 +92,8 @@ body #navbar {
   height: 80px;
   border: 2px solid #ccc;
   overflow: hidden;
-  background-color: #2d3b39;
+  background: url("../images/Wave.svg") no-repeat center center fixed;
+  background-size: cover;
   border-radius: 10px;
 }
 body #navbar img {
@@ -116,13 +119,15 @@ body #navbar a:hover {
   text-decoration: underline;
 }
 body .footer {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   width: 99%;
   bottom: 0;
   color: white;
   text-align: center;
-  background-color: #2d3b39;
+  background: url("../images/Wave.svg") no-repeat center center fixed;
+  background-size: cover;
   border: 2px solid #ccc;
   font-family: mainFont;
   border-radius: 10px;
@@ -136,7 +141,8 @@ body .resumeGrid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-  background-color: #202525;
+  background: url("../images/Contour Line.svg") no-repeat center center fixed;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   body .resumeGrid {
