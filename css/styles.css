@@ -1,53 +1,3 @@
-.nameContainer, .hobbyContainer, .logoContainer, .colorContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #202525;
-  border-radius: 10px;
-  width: 50%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#nameTitle, #hobbyTitle, #logoTitle, #colorTitle {
-  cursor: pointer;
-}
-
-#left {
-  rotate: 180deg;
-}
-
-#darkGroup {
-  fill: #536455;
-}
-
-#lightGroup {
-  fill: #93AEAF;
-}
-
-#dark1, #dark2, #light1 {
-  transition: all 1s ease;
-}
-
-#dark2 {
-  transform: translateX(-100%);
-}
-
-.nameContainer:hover #light1, .hobbyContainer:hover #light1, .logoContainer:hover #light1, .colorContainer:hover #light1 {
-  transform: translateX(20%);
-}
-
-.nameContainer:hover #dark1, .hobbyContainer:hover #dark1, .logoContainer:hover #dark1, .colorContainer:hover #dark1 {
-  transform: translateX(40%);
-  opacity: 0;
-}
-
-.nameContainer:hover #dark2, .hobbyContainer:hover #dark2, .logoContainer:hover #dark2, .colorContainer:hover #dark2 {
-  transform: translateX(0%);
-}
-
 @font-face {
   font-family: mainFont;
   src: url(../Allerta_Stencil/AllertaStencil-Regular.ttf);
@@ -60,6 +10,46 @@ body {
   color: white;
   font-family: mainFont;
   text-align: center;
+}
+body .nameContainer, body .hobbyContainer, body .logoContainer, body .colorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202525;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body #nameTitle, body #hobbyTitle, body #logoTitle, body #colorTitle {
+  cursor: pointer;
+}
+body #left {
+  rotate: 180deg;
+}
+body #darkGroup {
+  fill: #536455;
+}
+body #lightGroup {
+  fill: #93AEAF;
+}
+body #dark1, body #dark2, body #light1 {
+  transition: all 1s ease;
+}
+body #dark2 {
+  transform: translateX(-100%);
+}
+body .nameContainer:hover #light1, body .hobbyContainer:hover #light1, body .logoContainer:hover #light1, body .colorContainer:hover #light1 {
+  transform: translateX(20%);
+}
+body .nameContainer:hover #dark1, body .hobbyContainer:hover #dark1, body .logoContainer:hover #dark1, body .colorContainer:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+body .nameContainer:hover #dark2, body .hobbyContainer:hover #dark2, body .logoContainer:hover #dark2, body .colorContainer:hover #dark2 {
+  transform: translateX(0%);
 }
 body #color {
   padding-top: 10px;
@@ -77,6 +67,12 @@ body #name, body #hobby, body #logo, body #color {
   border-radius: 10px;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  body #name img, body #hobby img, body #logo img, body #color img {
+    width: 150px;
+    height: 150px;
+  }
+}
 body #github {
   margin-bottom: 10px;
   display: flex;
@@ -90,6 +86,8 @@ body .homeContent #title {
   font-size: 70px;
 }
 body #navbar {
+  display: flex;
+  align-items: center;
   height: 80px;
   border: 2px solid #ccc;
   overflow: hidden;
@@ -102,7 +100,11 @@ body #navbar img {
   width: 75px;
   float: left;
 }
-body #navbar a {
+body #navbar #navLinks {
+  margin: 0 auto;
+  text-align: center;
+}
+body #navbar #navLinks a {
   margin: 20px;
   translate: 10px down;
   color: white;
@@ -112,11 +114,11 @@ body #navbar a {
   font-family: mainFont;
 }
 @media (max-width: 768px) {
-  body #navbar a {
-    font-size: 20px;
+  body #navbar #navLinks a {
+    font-size: 25px;
   }
 }
-body #navbar a:hover {
+body #navbar #navLinks a:hover {
   text-decoration: underline;
 }
 body .footer {
@@ -131,6 +133,7 @@ body .footer {
   border-radius: 10px;
 }
 body .resumeGrid {
+  padding: 5px;
   text-align: left;
   height: 1200px;
   width: 60%;
@@ -236,12 +239,16 @@ body .imageGalleryContainer {
   align-items: center;
   margin-bottom: 125px;
 }
+@media (max-width: 768px) {
+  body .imageGalleryContainer {
+    flex-direction: column;
+  }
+}
 body .imageGalleryContainer #image-1, body .imageGalleryContainer #image-2, body .imageGalleryContainer #image-3 {
   background-color: #202525;
   padding: 30px;
   border-radius: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
 }
 body .imageGalleryContainer #image-1 .imageTitle, body .imageGalleryContainer #image-2 .imageTitle, body .imageGalleryContainer #image-3 .imageTitle {
   display: flex;
@@ -252,94 +259,4 @@ body .imageGalleryContainer #image-1 .imageTitle, body .imageGalleryContainer #i
 body .imageGalleryContainer #image-1 .imageTitle img, body .imageGalleryContainer #image-2 .imageTitle img, body .imageGalleryContainer #image-3 .imageTitle img {
   margin-left: 10px;
   margin-right: 10px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 50%;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 4px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }/*# sourceMappingURL=styles.css.map */
