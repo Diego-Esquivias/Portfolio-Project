@@ -11,6 +11,16 @@ body {
   font-family: mainFont;
   text-align: center;
 }
+body #selfie {
+  border: 5px white solid;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  body #selfie {
+    width: 250px;
+    height: 250px;
+  }
+}
 body .nameContainer, body .hobbyContainer, body .logoContainer, body .colorContainer {
   display: flex;
   justify-content: center;
@@ -22,6 +32,11 @@ body .nameContainer, body .hobbyContainer, body .logoContainer, body .colorConta
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
+}
+@media (max-width: 768px) {
+  body .nameContainer, body .hobbyContainer, body .logoContainer, body .colorContainer {
+    width: 70%;
+  }
 }
 body #nameTitle, body #hobbyTitle, body #logoTitle, body #colorTitle {
   cursor: pointer;
@@ -66,6 +81,11 @@ body #name, body #hobby, body #logo, body #color {
   display: none;
   border-radius: 10px;
   padding: 10px;
+}
+@media (max-width: 768px) {
+  body #name, body #hobby, body #logo, body #color {
+    width: 70%;
+  }
 }
 @media (max-width: 768px) {
   body #name img, body #hobby img, body #logo img, body #color img {
